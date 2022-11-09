@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-image: linear-gradient( #610e10e1, #cc181ec2);
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background-image: url(./imagem/favicon-32x32.png);    
+    background-size:auto;
+    height: 212px;
+}
+
